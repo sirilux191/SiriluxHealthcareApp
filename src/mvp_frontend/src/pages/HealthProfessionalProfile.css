@@ -1,0 +1,150 @@
+.edit-professional-profile {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.input-field-base16,
+.inputfield16 {
+  display: flex;
+  justify-content: flex-start;
+}
+.inputfield16 {
+  align-self: stretch;
+  border-radius: var(--default-border-raius);
+  background-color: var(--studio-darkmode-allwhite-ffffff);
+  border: 1px solid var(--accent);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-3xs) var(--padding-sm);
+}
+.input-field-base16 {
+  width: 340px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-7xs);
+}
+.date-of-birth,
+.dob {
+  font-family: var(--font-poppins);
+  position: relative;
+  color: var(--dark-gray);
+  text-align: left;
+}
+.date-of-birth {
+  cursor: pointer;
+  align-self: stretch;
+  font-size: var(--text-large-size);
+  line-height: 22px;
+}
+.dob {
+  border: 0;
+  font-size: var(--text-medium-size);
+  background-color: transparent;
+  flex: 1;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.formpart11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-5xs);
+  gap: var(--gap-5xs);
+}
+.inputfield24 {
+  align-self: stretch;
+  border-radius: var(--default-border-raius);
+  background-color: var(--studio-darkmode-allwhite-ffffff);
+  border: 1px solid var(--accent);
+}
+.company1 {
+  border: 0;
+  font-family: var(--font-poppins);
+  font-size: var(--text-large-size);
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  line-height: 22px;
+  color: var(--dark-gray);
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.form2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-base);
+  gap: var(--gap-xl);
+}
+.update2 {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 20px;
+  font-family: var(--font-poppins);
+  color: var(--studio-darkmode-allwhite-ffffff);
+  text-align: center;
+}
+.updatebutton1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-base);
+  background-color: var(--accent);
+  border-radius: var(--br-xl);
+  width: 110px;
+  height: 62px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.updatebutton1:hover {
+  background-color: var(--color-royalblue-100);
+}
+.professionalprofileeditsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.healthprofessionalprofile {
+  position: relative;
+  background-color: var(--studio-darkmode-allwhite-ffffff);
+  width: 100%;
+  height: auto;
+  min-height: 864px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 820px) {
+  .professionalprofileeditsection {
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-sizing: border-box;
+  }
+  .healthprofessionalprofile {
+    height: auto;
+    min-height: 864px;
+  }
+}

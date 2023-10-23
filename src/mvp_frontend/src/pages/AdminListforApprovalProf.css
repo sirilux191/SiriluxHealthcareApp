@@ -1,0 +1,149 @@
+.button2 {
+  position: relative;
+  font-size: var(--text-small-size);
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  font-family: var(--font-poppins);
+}
+.button1,
+.buttonframe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-base);
+  background-color: var(--accent);
+  border-radius: var(--br-xl);
+  overflow: hidden;
+}
+.button1:hover {
+  background-color: var(--color-royalblue-100);
+}
+.buttonframe {
+  flex-wrap: wrap;
+  gap: var(--gap-3xs);
+}
+.choose-which-one {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: inherit;
+}
+.textframe {
+  justify-content: center;
+  padding: 29px 0;
+}
+.adminlistforapprovalprof,
+.infoframe,
+.textframe {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoframe {
+  align-self: stretch;
+  justify-content: center;
+  padding: 12px 0;
+  gap: var(--gap-3xs);
+}
+.adminlistforapprovalprof {
+  position: relative;
+  background-color: var(--dominant);
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--text-small-size);
+  color: #000;
+  font-family: var(--font-poppins);
+}
+
+table {
+  width: 750px;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  table {
+    width: 100%;
+  }
+
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    /* Label the data */
+    content: attr(data-column);
+
+    color: #000;
+    font-weight: bold;
+  }
+}

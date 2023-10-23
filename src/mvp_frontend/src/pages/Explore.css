@@ -1,0 +1,173 @@
+.register {
+  color: #10217d;
+}
+.loginregister {
+  position: relative;
+  font-size: var(--font-size-17xl);
+  letter-spacing: 0.04em;
+  line-height: 72px;
+  display: inline-block;
+  text-align: left;
+  width: 290px;
+  color: #527c88;
+}
+.healthusericon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.health-user1 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+.arrowicon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.log-in {
+  position: relative;
+  font-size: var(--text-large-size);
+  line-height: 20px;
+  font-family: var(--font-poppins);
+  color: var(--studio-darkmode-allwhite-ffffff);
+  text-align: center;
+}
+.loginbutton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-base);
+  background-color: var(--accent);
+  border-radius: var(--br-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.loginbutton:hover {
+  background-color: var(--color-royalblue-100);
+}
+.register1 {
+  position: relative;
+  font-size: var(--text-large-size);
+  line-height: 20px;
+  font-family: var(--font-poppins);
+  color: var(--accent);
+  text-align: center;
+}
+.registerbutton {
+  cursor: pointer;
+  border: 1px solid var(--accent);
+  padding: var(--padding-7xs) var(--padding-base);
+  background-color: transparent;
+  border-radius: var(--br-xl);
+  overflow: hidden;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.registerbutton1:hover,
+.registerbutton:hover {
+  background-color: var(--color-gainsboro-100);
+}
+.buttonsection,
+.health-user,
+.registerbutton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.buttonsection {
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.health-user {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--studio-darkmode-allwhite-ffffff);
+  border: 1px solid var(--color-gainsboro-200);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--padding-xs) var(--padding-9xl);
+}
+.registerbutton1 {
+  cursor: pointer;
+  border: 1px solid var(--accent);
+  padding: var(--padding-7xs) var(--padding-base);
+  background-color: transparent;
+  border-radius: var(--br-xl);
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.buttonsection1,
+.health-professional,
+.registerbutton1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.buttonsection1 {
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  cursor: pointer;
+}
+.health-professional {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--studio-darkmode-allwhite-ffffff);
+  border: 1px solid var(--color-gainsboro-200);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--padding-xs) var(--padding-9xl);
+}
+.explore2,
+.getstartedsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.getstartedsection {
+  flex: 1;
+  justify-content: center;
+  gap: var(--gap-21xl);
+  min-width: 640px;
+}
+.explore2 {
+  position: relative;
+  background-color: var(--studio-darkmode-allwhite-ffffff);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  justify-content: space-between;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 820px) {
+  .health-professional,
+  .health-user {
+    flex-direction: column;
+    gap: var(--gap-xs);
+    align-items: center;
+    justify-content: center;
+  }
+  .health-professional {
+    padding-top: var(--padding-xs);
+    box-sizing: border-box;
+  }
+  .explore2 {
+    height: auto;
+    min-height: 1024px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .loginregister {
+    font-size: var(--font-size-13xl);
+    width: 240px;
+  }
+}

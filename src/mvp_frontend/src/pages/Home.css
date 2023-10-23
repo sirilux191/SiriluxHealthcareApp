@@ -1,0 +1,141 @@
+.one-stop-solution {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.we-provide-you {
+  margin: 0;
+  position: relative;
+  font-size: var(--text-large-size);
+  line-height: 24px;
+  color: var(--dark-gray);
+}
+.taglinesection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.globalhealthidicon {
+  position: relative;
+  border-radius: var(--br-11xl);
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.feature-1,
+.global-health-id {
+  align-self: stretch;
+  position: relative;
+}
+.feature-1 {
+  line-height: 24px;
+  font-weight: 600;
+}
+.global-health-id {
+  font-size: var(--text-medium-size);
+  line-height: 22px;
+}
+.featuredescription {
+  align-self: stretch;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.feature1,
+.feature2 {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+  min-width: 200px;
+}
+.feature2 {
+  height: 145px;
+}
+.healthserviceicon {
+  border-radius: var(--br-11xl);
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.featureslist {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs) 0;
+  gap: var(--gap-9xl);
+  font-size: var(--text-large-size);
+}
+.feature-section,
+.home {
+  background-color: var(--studio-darkmode-allwhite-ffffff);
+  display: flex;
+  align-items: center;
+}
+.feature-section {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 864px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 820px) {
+  .one-stop-solution,
+  .we-provide-you {
+    text-align: center;
+  }
+  .taglinesection {
+    align-items: center;
+    justify-content: center;
+  }
+  .feature-section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-sizing: border-box;
+  }
+  .home {
+    height: auto;
+    min-height: 864px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .one-stop-solution {
+    font-size: var(--font-size-17xl);
+  }
+  .we-provide-you {
+    font-size: var(--text-small-size);
+  }
+  .featureslist {
+    align-items: center;
+    justify-content: center;
+  }
+}
